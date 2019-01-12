@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Chat With Mate</string>
+    <string name="school">School</string>
+    <string name="college">College</string>
+    <string name="vesity">Versity</string>
+    <string name="lab">Lab</string>
+    <string name="users">All Users</string>
+    <string name="friend_add_key">friend_add_key</string>
+    <string name="request">Request</string>
+    <string name="request_type">request_type</string>
+    <string name="received">received</string>
+    <string name="friend_list">Friend_List</string>
+    <string name="friend">Friends</string>
+    <string name="unfriended">Unfriended</string>
+    <string name="blocked">Blocked</string>
+    <string name="req_canceled">Request_canceled</string>
+    <string name="req_declined">Requst_declined</string>
+    <string name="friend_1">Friend_1</string>
+    <string name="friend_2">Friend_2</string>
+    <string name="messages">Messages</string>
+    <string name="numberOfFriends">No_Of_Friends</string>
+
+
+</resources>

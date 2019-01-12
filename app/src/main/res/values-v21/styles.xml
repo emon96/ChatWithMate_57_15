@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="My_action_button" parent="android:Widget.Material.Light.ActionBar.Solid">
+
+    </style>
+
+    <style name="my_Action_Button" parent="android:Widget.Material.Light.ActionBar.Solid"></style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionOverflowButtonStyle">@style/My_action_button</item>
+        <item name="android:windowActivityTransitions">true</item>
+
+    </style>
+</resources>

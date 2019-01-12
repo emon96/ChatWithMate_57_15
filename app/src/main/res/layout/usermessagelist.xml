@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:divider="@null"
+    android:dividerHeight="0dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="15dp"
+            android:layout_gravity="bottom"
+            android:layout_height="15dp"
+            android:src="@drawable/def_img"
+            android:id="@+id/UserImageId"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittext_circle"
+            android:backgroundTint="#0b45a3"
+            android:id="@+id/messageLinearlayoutId"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="ljdfk"
+                android:visibility="gone"
+                android:textColor="#ff0900"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/tvUserImageTitleId"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:text="lkdjfl"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/tvUserImageDesId"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+    android:layout_gravity="center"
+    android:id="@+id/linearlayoutid"
+    android:padding="30dp"
+    android:background="#cc3d3c3c"
+
+tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="#000000"
+        android:hint="Emali"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="#ccdfdfdf"
+        android:paddingLeft="20dp"
+        android:textSize="13dp"
+        android:textColorHint="#000000"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edittext_circle"
+        android:id="@+id/signemailId"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="#000000"
+        android:hint="Password"
+        android:textSize="13dp"
+        android:textColorHint="#000000"
+        android:backgroundTint="#ccdfdfdf"
+        android:background="@drawable/edittext_circle"
+        android:paddingLeft="20dp"
+        android:id="@+id/signpasswordId"
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:text="LogIn"
+        android:textStyle="bold"
+        android:textColor="#fdfdfd"
+        android:id="@+id/signLoginId"
+        android:backgroundTint="#000000"
+        android:layout_gravity="center"
+        android:background="@drawable/edittext_circle"/>
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="150dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/googleSignButton"
+        android:layout_height="0dp"
+        android:layout_gravity="center">
+
+    </com.google.android.gms.common.SignInButton>
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:id="@+id/signCreateAccountId"
+        android:layout_marginTop="110dp"
+        android:textColor="#fdfdfd"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:backgroundTint="#000000"
+        android:text="   Create New Account   "
+        android:background="@drawable/edittext_circle"/>
+
+
+</LinearLayout>

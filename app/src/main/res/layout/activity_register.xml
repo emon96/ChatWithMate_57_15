@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="#cc3d3c3c"
+    tools:context="com.example.emon.myapplication2.Register">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/def_img"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#ffffff"
+
+        android:id="@+id/imageButtonId"/>
+   <!-- <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="96dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_height="96dp"
+        android:id="@+id/regImageId"
+        android:src="@drawable/def_pro"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Select Photo"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/imageButtonId"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <include layout="@layout/snippet_reg"></include>
+    </LinearLayout>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="44dp"
+        android:id="@+id/registerRadiogroup"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_male"
+            android:text="Male"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_female"
+            android:text="Female"/>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/registerSubmitId"
+        android:textColor="#ffffff"
+        android:text="Sign in"
+        android:backgroundTint="#0c0c0d"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:background="@drawable/edittext_circle"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/faltuview"/>
+
+
+</LinearLayout>

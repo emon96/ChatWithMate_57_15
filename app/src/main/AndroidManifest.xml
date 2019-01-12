@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.emon.myapplication2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Chat With Mate"
+        android:roundIcon="@drawable/b"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".Register" />
+        <activity android:name=".Welcome" />
+        <activity
+            android:name=".ImagePostActivity"
+            android:label="Post Image"
+             />
+        <activity android:name=".FriendsPage" />
+        <activity android:name=".OptionPage" />
+        <activity android:name=".UserProfile" />
+        <activity android:name=".Friend_Profile_Activity" />
+        <activity android:name=".RequestPage" />
+        <activity android:name=".Friend_Tab" />
+        <activity android:name=".Messanger" />
+        <activity android:name=".Messages"></activity>
+    </application>
+
+</manifest>

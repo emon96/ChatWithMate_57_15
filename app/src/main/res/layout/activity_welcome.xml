@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:orientation="vertical"
+    tools:context=".Welcome">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#000000"
+        android:id="@+id/welcome_layoutId"
+        android:layout_height="45dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="41dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_height="match_parent"
+            android:id="@+id/welcome_profile_pic"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:id="@+id/welcome_nameId"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#000000">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_page"
+            android:layout_marginLeft="35dp"
+            android:id="@+id/homePageLogoId"
+            android:layout_gravity="center"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/find_friends_ic"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/find_friend_menu"
+            android:layout_gravity="center"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/messanger_ic"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/messenger_bar"
+            android:layout_gravity="center"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/option_bar"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/option_menubarId"
+            android:layout_gravity="center"
+            />
+
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvimageListId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>
