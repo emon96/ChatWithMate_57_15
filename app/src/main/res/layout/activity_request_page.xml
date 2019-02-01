@@ -35,9 +35,10 @@
             android:layout_height="wrap_content"
             android:textSize="17dp"
             android:id="@+id/request_list_id"
-            android:textColor="#ffffff"
+            android:textColor="#fd0000"
             android:layout_marginRight="100dp"
             android:text="REQUESTS"
+
             />
         <TextView
             android:layout_width="wrap_content"

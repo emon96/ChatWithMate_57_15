@@ -53,6 +53,7 @@ public class UserProfile extends AppCompatActivity {
     private FirebaseUser firebaseUser;
     private FirebaseAuth firebaseAuth;
     private RecyclerView recyclerView;
+    private TextView nameProfile;
     String uname;
 
     @Override
@@ -64,16 +65,9 @@ public class UserProfile extends AppCompatActivity {
         recyclerView=findViewById(R.id.userProfileRecyclerview);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
+        nameProfile=findViewById(R.id.profileNameId);
         noOfFriend=findViewById(R.id.profile_noOfFriend);
         phone=findViewById(R.id.profile_phone);
-        back=findViewById(R.id.back_from_profile);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
         pic=findViewById(R.id.profile_pic);
         name=findViewById(R.id.profile_username);
         DatabaseReference databaseReference= FirebaseDatabase.getInstance().getReference().child("All Users");
@@ -85,6 +79,7 @@ public class UserProfile extends AppCompatActivity {
                         try {
                             uname=snapshot.getValue().toString();
                             name.setText(snapshot.getValue().toString());
+                            nameProfile.setText(snapshot.getValue().toString()+"'s profile");
                         } catch (Exception e) {
                             e.printStackTrace();
                         }

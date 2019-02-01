@@ -75,6 +75,9 @@ public class Register extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 UserRegister();
+                //startActivity(new Intent(Register.this,AfterRegister.class));
+                //finish();
+
             }
         });
         imageButton.setOnClickListener(new View.OnClickListener() {
@@ -150,7 +153,7 @@ public class Register extends AppCompatActivity {
                             photoStringLink=taskSnapshot.toString();
                            // String downloadUri=taskSnapshot.getDownloadUrl().toString();
                             Toast.makeText(Register.this,"Registerd successful",Toast.LENGTH_SHORT).show();
-                            // startActivity(new Intent(Register.this,MainActivity.class));
+                             //startActivity(new Intent(Register.this,AfterRegister.class));
                             String userId=firebaseAuth.getCurrentUser().getUid();
                             final DatabaseReference current_user=databaseReference.child(userId);
                             current_user.child("username").setValue(uname);
@@ -191,8 +194,7 @@ public class Register extends AppCompatActivity {
 
                     }
                 });
-               // startActivity(new Intent(Register.this,AfterRegister.class));
-              //  finish();
+
             }
 
         });

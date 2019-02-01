@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.emon.myapplication2.R;
@@ -42,8 +43,24 @@ public class search_Holder extends RecyclerView.ViewHolder{
     {
 
             //ImageView tv_image=mView.findViewById(R.id.tv_profile_image);
-            CircleImageView tv_image=mView.findViewById(R.id.tv_profile_image);
-            Picasso.get().load(profilepic).into(tv_image);
+            if(profilepic.equals("null"))
+            {
+                 CircleImageView tv_image=mView.findViewById(R.id.tv_profile_image);
+                tv_image.setVisibility(View.INVISIBLE);
+                tv_image.setVisibility(View.GONE);
+                LinearLayout layout=mView.findViewById(R.id.friend_linearlayout);
+                layout.setVisibility(View.INVISIBLE);
+                layout.setVisibility(View.GONE);
+
+
+                //Picasso.get().load(profilepic).into(tv_image);
+            }
+            else
+            {
+                CircleImageView tv_image=mView.findViewById(R.id.tv_profile_image);
+                Picasso.get().load(profilepic).into(tv_image);
+            }
+
 
     }
 

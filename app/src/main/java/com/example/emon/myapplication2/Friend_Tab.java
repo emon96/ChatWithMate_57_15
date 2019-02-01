@@ -81,7 +81,7 @@ public class Friend_Tab extends AppCompatActivity {
                 mReference
         ) {
             @Override
-            protected void populateViewHolder(final search_Holder viewHolder, Search_user model, int position) {
+            protected void populateViewHolder(final search_Holder viewHolder, final Search_user model, int position) {
                 final String friend_key=getRef(position).getKey();
                 Log.d("TAG","---------------------------------------------------------X");
                 existRef.child("Request").addValueEventListener(new ValueEventListener() {
@@ -126,7 +126,7 @@ public class Friend_Tab extends AppCompatActivity {
                                     }
                                     else
                                     {
-                                        request_list.setVisibility(View.INVISIBLE);
+                                        viewHolder.setProfilepic(getApplicationContext(),"null");
                                     }
                                 }
 

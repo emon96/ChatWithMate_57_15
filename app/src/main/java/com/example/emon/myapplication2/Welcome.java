@@ -180,6 +180,13 @@ public class Welcome extends AppCompatActivity {
     }
 
     @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+        System.exit(0);
+    }
+
+    @Override
     protected void onStart() {
         super.onStart();
 
@@ -198,26 +205,29 @@ public class Welcome extends AppCompatActivity {
                 viewHolder.setDesc(model.getDesc());
                 viewHolder.setId(model.getId());
                 viewHolder.setImage(getApplicationContext(),model.getImage());
-
-                    viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            if(!model.getId().equals(FirebaseAuth.getInstance().getCurrentUser().getUid()))
-                            {
-                            Intent friend_intent=new Intent(Welcome.this,Friend_Profile_Activity.class);
-                            friend_intent.putExtra(getString(R.string.friend_add_key),model.getId());
-                            startActivity(friend_intent);
-                            }
-                            else
-                            {
-                                startActivity(new Intent(Welcome.this,UserProfile.class));
-                            }
-
+                viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if(!model.getId().equals(FirebaseAuth.getInstance().getCurrentUser().getUid()))
+                        {
+                              Intent friend_intent=new Intent(Welcome.this,Friend_Profile_Activity.class);
+                               friend_intent.putExtra(getString(R.string.friend_add_key),model.getId());
+                              startActivity(friend_intent);
                         }
-                    });
+                        else
+                        {
+                            startActivity(new Intent(Welcome.this,UserProfile.class));
+                        }
+
+                    }
+                });
+
+            }
 
 
-
+            @Override
+            public void onBindViewHolder(UploadImageHolder viewHolder, int position) {
+                super.onBindViewHolder(viewHolder, position);
 
             }
         };
@@ -237,6 +247,7 @@ public class Welcome extends AppCompatActivity {
             TextView image_title=view.findViewById(R.id.tvUserImageTitleId);
             image_title.setText(title);
 
+
         }
         public void setDesc(String des)
         {
@@ -248,6 +259,19 @@ public class Welcome extends AppCompatActivity {
             ImageView imageView=view.findViewById(R.id.UserImageId);
             Picasso.get().load(image).into(imageView);
             //imageView1.setImageURI(imageView);
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if(true)
+                    {
+                        System.out.println("------------------------------------------You clicled image");
+                    }
+                    else
+                    {
+
+                    }
+                }
+            });
 
         }
         public void setId(String id)

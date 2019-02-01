@@ -37,15 +37,10 @@ public class Messanger extends AppCompatActivity {
         request_list=findViewById(R.id.rv_friend_list_id);
         request_list.setHasFixedSize(true);
         request_list.setLayoutManager(new LinearLayoutManager(this));
-        iv_search=findViewById(R.id.search_user);
+
         existRef=mDatabase.getReference();
         Request_Friend_list();
-        iv_search.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-               // startActivity(new Intent(Friend_Tab.this,FriendsPage.class));
-            }
-        });
+
 
 
         mReceiverRef=mDatabase.getReference();

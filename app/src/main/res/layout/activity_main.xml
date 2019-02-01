@@ -8,7 +8,7 @@ android:orientation="vertical"
     android:layout_gravity="center"
     android:id="@+id/linearlayoutid"
     android:padding="30dp"
-    android:background="#cc3d3c3c"
+    android:background="#ccf90009"
 
 tools:context=".MainActivity">
 
@@ -18,7 +18,7 @@ tools:context=".MainActivity">
         android:textColor="#000000"
         android:hint="Emali"
         android:layout_marginTop="70dp"
-        android:backgroundTint="#ccdfdfdf"
+        android:backgroundTint="#ccffffff"
         android:paddingLeft="20dp"
         android:textSize="13dp"
         android:textColorHint="#000000"
@@ -34,7 +34,7 @@ tools:context=".MainActivity">
         android:hint="Password"
         android:textSize="13dp"
         android:textColorHint="#000000"
-        android:backgroundTint="#ccdfdfdf"
+        android:backgroundTint="#ccffffff"
         android:background="@drawable/edittext_circle"
         android:paddingLeft="20dp"
         android:id="@+id/signpasswordId"
@@ -65,13 +65,14 @@ tools:context=".MainActivity">
         android:layout_height="40dp"
         android:layout_gravity="center"
         android:id="@+id/signCreateAccountId"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="150dp"
         android:textColor="#fdfdfd"
         android:textSize="12dp"
         android:textStyle="bold"
         android:backgroundTint="#000000"
         android:text="   Create New Account   "
         android:background="@drawable/edittext_circle"/>
+
 
 
 </LinearLayout>

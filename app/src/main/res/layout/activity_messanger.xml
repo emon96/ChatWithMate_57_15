@@ -7,23 +7,28 @@
     android:orientation="vertical"
     android:padding="0dp"
     tools:context=".Messanger">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:background="#000000"
-        android:gravity="right"
         android:orientation="horizontal"
         android:padding="3dp"
-        android:layout_height="40dp">
-        <ImageButton
+        android:gravity="left"
+        android:layout_height="wrap_content">
+        <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/search_user"
-            android:layout_marginTop="2dp"
-            android:layout_marginRight="10dp"
+            android:text="Messanger"
 
-            android:background="@drawable/search_ic"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content" />
+
             />
     </LinearLayout>
+
+
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"

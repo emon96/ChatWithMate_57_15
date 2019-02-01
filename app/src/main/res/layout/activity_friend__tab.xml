@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:textSize="17dp"
             android:id="@+id/friend_list_id"
-            android:textColor="#ffffff"
+            android:textColor="#ff0000"
             android:text="FRIENDS"
             />
 

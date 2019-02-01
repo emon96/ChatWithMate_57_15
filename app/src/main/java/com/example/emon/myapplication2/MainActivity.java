@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.Auth;
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private FirebaseAuth.AuthStateListener authStateListener;
     private static final String TAG = "MainActivity";
     private SignInButton signInButton;
+    private ProgressBar progressBar;
     private GoogleApiClient googleApiClient;
 
     @Override
@@ -59,6 +61,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         password=findViewById(R.id.signpasswordId);
         login=findViewById(R.id.signLoginId);
         register=findViewById(R.id.signCreateAccountId);
+
         authStateListener=new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {

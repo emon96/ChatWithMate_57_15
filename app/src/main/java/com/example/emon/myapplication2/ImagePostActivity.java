@@ -162,6 +162,10 @@ public class ImagePostActivity extends AppCompatActivity {
 
         final String des=desctiption.getText().toString();
         Desc=des;
+        if(resultUri.equals("null"))
+        {
+
+        }
 
         final StorageReference filepath=storageReference.child("Upload Images").child(resultUri.getLastPathSegment());
         filepath.putFile(resultUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {

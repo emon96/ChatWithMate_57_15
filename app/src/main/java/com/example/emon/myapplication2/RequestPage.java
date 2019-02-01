@@ -123,7 +123,8 @@ public class RequestPage extends AppCompatActivity {
                                     }
                                     else
                                     {
-                                        request_list.setVisibility(View.INVISIBLE);
+                                        viewHolder.setProfilepic(getApplicationContext(),"null");
+                                        //request_list.setVisibility(View.INVISIBLE);
                                     }
                                 }
 
